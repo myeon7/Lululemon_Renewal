@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>arrow</title>
+  <link rel="stylesheet" href="css/lulu_reset.css" type="text/css" />
+  <link rel="stylesheet" href="css/sub_aboutus.css" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<section id="values">
+		<h2>Our Values Guide Us</h2>
+		<div class="values_wrap">
+			<div class="outer_circle">
+			
+				<div class="swiper-container valSwiper">
+					<div class="swiper-wrapper">
+						<div class="v2 swiper-slide">
+							<div class="inner_circle">
+								<p>"CONTEXT BLABLABLA1"</p>
+								<h4>Personal Responsibility</h4>
+							</div>
+						</div>
+						
+						<div class="v2 swiper-slide">
+							<div class="inner_circle">
+								<p>"CONTEXT BLABLABLA2"</p>
+								<h4>Not Personal</h4>
+							</div>
+						</div>
+						
+						<div class="v3 swiper-slide">
+							<div class="inner_circle">
+								<p>"CONTEXT BLABLABLA3"</p>
+								<h4>Title3</h4>
+							</div>
+						</div>
+						
+					</div> <!--swiper-wrappers -->
+					
+					
+					
+				</div> <!-- inner_circle -->
+				<div class="slider_btn">
+						<div class="valprev"><img src="img/icon_left_white.png" alt="left"></div>
+						<div class="valnext"><img src="img/icon_right_white.png" alt="right"></div>
+					</div> <!--slider_btn -->
+			</div> <!-- outer_circle -->
+		</div> <!-- values_wrap -->		
+	</section> <!-- values -->
+
+	<script>
+		/* ABOUT US - Our Values Swiper */
+		const valSwiper = new Swiper(".valSwiper", {
+			spaceBetween: 10,
+			effect: "fade",
+			loop:true,
+			navigation: {
+				nextEl: ".valnext",
+				prevEl: ".valprev",
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script>
+</body>
+</html>

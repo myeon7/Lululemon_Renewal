@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/*START visual*/
+#visual {
+	clear:both;
+	width:100%;height:64vh;
+	float:left;
+}
+#visual .visual_wrap{
+	position:relative;
+	width:100%;height:100%;
+}
+#visual h2{
+	position:absolute;
+	top:40%;left:9%;
+	color:#fff;
+	font-size:7vh;
+	line-height:8vh;
+}
+#visual h2>span{ font-size:9vh; }
+#visual .img_box{
+	width:100%;height:100%;
+	background:url(../img/shop/lulu-shop-women.jpeg) no-repeat top/cover;
+	background-position:40%;
+	background-attachment: fixed;
+}
+/*
+#visual .btn_shop{
+	position:absolute;bottom:0;right:0;
+	width:200px;height:6vh;
+}
+#visual .btn_shop>a{
+	display:block;
+	width:100%;height:100%;
+	font-size:1.8vh;
+	line-height:6vh;
+	text-align:center;
+	color:#fff;
+	background-color:rgba(0, 0, 0, 0.6);
+}
+*/
+/*END visual*/
+
+.bg_logo{
+	position:fixed;
+	top:45%;left:50%;
+	transform:translate(-50%,-50%);
+	width:350px;height:350px;
+	background-image:url(../img/lululemon_logo.png);
+	background-position:center/cover;
+	background-repeat: no-repeat;
+	background-size: 350px;
+	z-index:-10;
+	opacity:0.1;
+}
+
+#mainContents{
+	width:100%;clear:both;
+	margin-bottom:1000px;
+}
+
+/*START collection*/
+#collection{
+	position:relative;
+	width:100%;
+	float:left;	
+}
+#collection .title{
+	float:left;
+	width:100%;height:200px;
+	background-color:#f2f2f2;
+}
+#collection .title >h2{
+	position:absolute; top:90px;left:50px;
+	font-size:3.1rem;
+}
+#collection .col_wrap {
+	position:relative;
+	width:100%;height:480px;
+	float:left;
+	background-color:#fff;
+}
+#collection .col_wrap .swiper-container{
+	position:absolute; top:-40px;
+	width:100%;height:100%;
+	padding:0 10%;
+}
+.griditem{
+	position:relative;
+	height:380px;
+}
+.griditem > .imgbox{
+	width:100%;height:350px;
+	background:url(../img/shop/w-nc1-1.jpg) no-repeat center/cover;
+}
+.griditem:nth-child(2) > .imgbox{background:url(../img/shop/w-nc2-1.jpg) no-repeat center/cover;}
+.griditem:nth-child(3) > .imgbox{background:url(../img/shop/w-nc3-1.jpg) no-repeat center/cover;}
+.griditem:nth-child(4) > .imgbox{background:url(../img/shop/w-nc4-1.jpg) no-repeat center/cover;}
+.griditem:nth-child(5) > .imgbox{background:url(../img/shop/w-nc5-1.jpg) no-repeat center/cover;}
+.griditem > .txtbox{
+	margin-top:15px;
+	width:100%;height:100%;
+}
+.griditem > .txtbox p{
+	font-size:1.8rem; 
+	line-height: 3rem;
+	font-weight: bold;
+}
+.griditem > .txtbox p:nth-child(2){
+	font-size:1.5rem; 
+	line-height: 2rem;
+	font-weight: normal;
+}
+
+#collection .showmore{
+	position:absolute;left:50%;bottom:0px;
+	transform:translateX(-50%);
+	width:120px;height:50px;
+	background-color:#f2f2f2;
+	border-radius:10% 10% 0 0 ;
+}
+#collection .showmore .btn_more{
+	position:absolute;top:50%;left:50%;
+	transform:translate(-50%, -50%);
+	width:100%;height:100%;
+}
+#collection .showmore .btn_more>a{
+	position:absolute;top:20px;left:0;
+	width:100%;
+	text-align: center;
+}
+#collection .showmore .btn_more>a>span{
+	position:absolute;
+	top:-6px;left:40%;
+	width:26px;height:26px;
+	z-index: -1;
+	background-color:#fff;
+	transform-origin: 50% 50%;
+	transform:rotate(0deg);
+	animation: spin 2s linear infinite;
+}
+/*END collection*/
+
+
+/*START fyf*/
+#fyf{position:relative;margin-top:0px;float:left;}
+#fyf h2{
+	font-size:3.4rem;
+	text-align: center;
+	margin:50px 0 30px;
+}
+#fyf .fyfcon{
+	float:left;margin-left:7vw;
+	width:86vw;
+	margin-bottom:50px;
+}
+
+#fyf .fyfcon>.imgbox{
+	margin:0 auto 15px;
+	width:100%;height:400px;
+	float:left;
+}
+#fyf .fyfcon:nth-child(1) >.imgbox{
+	background:url(../img/shop/w-ffy1.jpg) no-repeat center/cover;
+}
+#fyf .fyfcon:nth-child(2) >.imgbox{
+	background:url(../img/shop/w-ffy2.jpg) no-repeat center/cover;
+}
+#fyf .fyfcon:nth-child(3) >.imgbox{
+	background:url(../img/shop/w-ffy3.jpg) no-repeat center/cover;
+}
+#fyf .fyfcon:nth-child(4) >.imgbox{
+	background:url(../img/shop/w-ffy4.jpg) no-repeat center/cover;
+}
+#fyf .fyfcon:nth-child(5) >.imgbox{
+	background:url(../img/shop/w-ffy5.jpg) no-repeat center/cover;
+}
+#fyf .fyfcon:nth-child(6) >.imgbox{
+	background:url(../img/shop/w-ffy6.jpg) no-repeat center/cover;
+}
+#fyf .fyfcon:nth-child(7) >.imgbox{
+	height:350px;
+	background:url(../img/shop/ffy7.jpg) no-repeat center/cover;
+}
+#fyf .fyfcon:nth-child(8) >.imgbox{
+	height:300px;
+	background:url(../img/shop/ffy8.jpg) no-repeat center/cover;
+}
+
+#fyf .fyfcon>.txtbox{float:left; width:100%;}
+#fyf .fyfcon>.txtbox>h3{font-size:2.2rem;line-height:2.6rem;text-transform: capitalize;}
+#fyf .fyfcon>.txtbox>p{margin-top:10px;font-size:1.5rem;line-height:2.2rem;}
+#fyf .fyfcon>.txtbox> .btn_more{margin-top:20px;}
+
+#fyf .pickup .txtbox>div{
+	margin-top:20px;
+	text-align: center;
+	font-size:1.4rem;
+	font-weight: bold;
+}
+#fyf .pickup .txtbox>div>span{cursor: pointer;}
+#fyf .pickup .txtbox>div>span:nth-child(1):after{
+	content:" | ";
+	margin:0 10px;
+	cursor:auto;
+}
+/*END fyf*/
+
+
+/*  START TABLET 768 */
+@media all and (min-width:768px) {	
+	/*START visual*/
+	
+}
+/*  END TABLET 768 */
+
+
+
+/*  START TABLET 1024 */
+@media all and (min-width:1024px) {	
+	/*START visual*/
+	
+}
+/*  END TABLET 1024 */
+
+
+
+
